@@ -64,6 +64,15 @@ PRODUCT_COPY_FILES += \
     vendor/du/etc/permissions/org.pixelexperience.weather.client.xml:system/etc/permissions/org.pixelexperience.weather.client.xml \
     vendor/du/etc/default-permissions/org.pixelexperience.weather.client.xml:system/etc/default-permissions/org.pixelexperience.weather.client.xml
 
+# Additional Apps
+PRODUCT_PACKAGES += \
+    OnePlusGallery \
+    Lawnchair
+
+PRODUCT_COPY_FILES += \
+    vendor/du/prebuilt/common/etc/permissions/privapp-permissions-lawnchair.xml:system/etc/permissions/privapp-permissions-lawnchair.xml \
+    vendor/du/prebuilt/common/etc/sysconfig/lawnchair-hiddenapi-package-whitelist.xml:system/etc/sysconfig/lawnchair-hiddenapi-package-whitelist.xml
+
 # Packages
 include vendor/du/config/packages.mk
 
